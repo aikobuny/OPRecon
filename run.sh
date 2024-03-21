@@ -19,7 +19,7 @@ command -v git > /dev/null 2>&1 || { echo >&2 "Package GIT is not installed ... 
 command -v python3 > /dev/null 2>&1 || { echo >&2 "Package Python3 is not installed ... Aborting ..."; exit 1; }
 }
 script() {
-printf "\n\e[1;92m[\e[1;93m01\e[1;92m] Find information via phone number\n[\e[1;93m02\e[1;92m] Find location via IP Address/Website Link\n[\e[1;93m03\e[1;92m] Phone Number Tracker (Recommanded to find IP Address)\n[\e[1;93m04\e[1;92m] Exit"
+printf "\n\e[1;92m[\e[1;93m01\e[1;92m] Find information via phone number\n[\e[1;93m02\e[1;92m] Find location via IP Address/Website Link\n[\e[1;93m03\e[1;92m] Phone Number Tracker (Recommended to find IP Address)\n[\e[1;93m04\e[1;92m] Exit"
 read -p $'\n\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]\e[1;93m Choose an option: \e[1;93m' option
 
 if [[ $option == 1 || $option == 01 ]]; then
